@@ -5,11 +5,16 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
+#closed-captions {
+	align-items: center;
+}
+
 #closed-captions p {
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
 }
+
 #closed-captions .on {
 	opacity: 1;
 }
@@ -18,10 +23,25 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 }
 .voice1 {
-	font-style: italic;
+	font-family: 'brenner mono';
+	top: 5em;
+	width: 80%;
+	text-align: center;
 }
 .voice2 {
-	font-weight: bold;
+	font-family: 'brenner slab';
+	text-align: center;
+	width: 80%;
+}
+
+.voice3 {
+	font-family: 'brenner script';
+	font-weight: 800;
+	font-size: 7em;
+	text-align: center;
+	top: 2.8em;
+	width: 80%;
+	
 }
 
 /* **********************************************
@@ -33,9 +53,62 @@ The first paragraph, with extended timing for
 You probably want to change the styling.
 ********************************************** */
 .p0 span {
-	opacity: 0;
-	font-family: brenner;
+	opacity: 1;
+	color: white;
+
 }
+
+.p8 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p9 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p11 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p12 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p14 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p15 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p17 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p18 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p19 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p20 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+/* }
 .p0.on span:first-of-type {
 	opacity: 1;
 	transition: 0s;
@@ -102,7 +175,7 @@ You probably want to change the styling.
 	background: hotpink;
 	color: red;
 	font-size: 200px;
-}
+} */
 
 /* **********************************************
 Sounds.
@@ -112,13 +185,23 @@ Sounds.
 *********************************************  */
 
 /* The moment the class .sound1 is added to the body, the background is yellow */
+
+.sound0 {
+	background-color: black;
+	color: white;
+}
+
 .sound1 {
-	
+	background-color: black;
 }
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 .sound1 #video-mask {
 	
+}
+.sound9 {
+	background-color: white;
+	color: black;
 }
 
 
