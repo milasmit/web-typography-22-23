@@ -24,24 +24,30 @@ Feel free to adjust the defaults to your needs.
 }
 .voice1 {
 	font-family: 'brenner mono';
-	top: 5em;
-	width: 80%;
+	top: 7em;
+	width: 80vw;
 	text-align: center;
 }
 .voice2 {
 	font-family: 'brenner slab';
 	text-align: center;
-	width: 80%;
+	width: 80vw;
 }
 
 .voice3 {
 	font-family: 'brenner script';
 	font-weight: 800;
-	font-size: 7em;
+	font-size: 6em;
 	text-align: center;
 	top: 2.8em;
-	width: 80%;
-	
+	width: 80vw;
+}
+
+.voice4 {
+	font-family: 'benner';
+	font-weight: 600;
+	text-align: center;
+	width: 80vw;
 }
 
 /* **********************************************
@@ -106,6 +112,90 @@ You probably want to change the styling.
 .p20 span {
 	font-size: 5em;
 	font-weight: 800;
+}
+
+.p22 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p23 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p25 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p26 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p28 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p29 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p31 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p33 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p34 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p36 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p37 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p38 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p39 span {
+	font-size: 5em;
+	font-weight: 800;
+}
+
+.p40 span {
+	transition: 0s .5s;
+}
+
+.p41 span {
+	transition: 0s .5s;
+	font-size: 3em;
+}
+
+.p42 span {
+	transition: 0s .5s;
+	font-size: 4em;
+}
+
+.p43 span {
+	transition: 0s .5s;
+	font-size: 5em;
 }
 
 /* }
@@ -196,9 +286,9 @@ Sounds.
 }
 
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
-.sound1 #video-mask {
+/* .sound1 #video-mask {
 	
-}
+} */
 .sound9 {
 	background-color: white;
 	color: black;
@@ -218,6 +308,10 @@ body {
 }
 #video-container {
 	margin: auto;
+	/* animation: trilling 50s; */
+	/* animation-iteration-count: 5;
+	animation-fill-mode: none;
+	animation-delay: 50s; */
 }
 #video-mask {
 	aspect-ratio: 240.5/100;
@@ -231,4 +325,34 @@ iframe {
 	width: 80vw;
 	height: 53.33333333vw;
 	margin-top: -0.35vw;
+}
+
+.sound9 #video-container{
+	animation: trilling 0.1s;
+	animation-fill-mode: none;
+	animation-duration: 42.154s;
+	animation-iteration-count: 7;
+	/* animation-delay: 50s; */
+}
+
+@keyframes trilling {
+	0% {
+		transform: scale(1);
+	}
+
+	25% {
+		transform: scale(1.01);
+	}
+
+	50% {
+		transform: scale(1);
+	}
+
+	75% {
+		transform: scale(1.01);
+	}
+
+	100% {
+		transform: scale(1);
+	}
 }
