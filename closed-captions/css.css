@@ -531,3 +531,22 @@ iframe {
 .sound20 #video-mask {
 	animation: none; 
 }
+
+.sound0 #video-mask {
+	animation: schaduw 5s;
+	animation-duration: 10s;
+}
+
+@keyframes schaduw {
+	0% {
+		box-shadow: none;
+	}
+
+	50% {
+		box-shadow: 0 0 15px 15px red;
+	}
+
+	100% {
+		box-shadow: none;
+	}
+}
