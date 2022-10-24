@@ -37,16 +37,17 @@ Feel free to adjust the defaults to your needs.
 }
 
 .voice3 {
-	font-family: 'brenner script';
+	font-family: 'brenner sans condensed';
 	font-weight: 800;
-	font-size: 4em;
-	text-align: center;
-	top: 2.8em;
+	font-style: italic;
+	font-size: 2em;
+	left: 6.8em;
+	top: 6.8em;
 	width: 80vw;
 }
 
 .p6 span {
-	color: rgba(255, 255, 255, 0.563);
+	color: rgba(255, 255, 255, 0.379);
 }
 
 .voice4 {
@@ -54,6 +55,7 @@ Feel free to adjust the defaults to your needs.
 	font-weight: 600;
 	text-align: center;
 	width: 80vw;
+	font-size: 1.2em;
 }
 
 /* **********************************************
@@ -185,10 +187,10 @@ You probably want to change the styling.
 	font-weight: 800;
 }
 
-.p40 span {
+/* .p40 span {
 	transition: 0s .5s;
 	font-size: 2.4em;
-}
+} */
 
 .p41 span {
 	transition: 0s .5s;
@@ -306,6 +308,7 @@ Basic layout.
 body {
 	display: grid;
 	height: 100vh;
+	width: 100vw;
 	margin: 0;
 	justify-content: center;
 }
@@ -326,6 +329,100 @@ iframe {
 	height: 53.33333333vw;
 	margin-top: -0.35vw;
 }
+
+/* animaties */
+
+.sound0 #video-mask {
+	animation: schaduw 5s;
+	animation-duration: 8s;
+}
+
+@keyframes schaduw {
+	0% {
+		box-shadow: none;
+	}
+
+	50% {
+		box-shadow: 0 0 15px 15px red;
+	}
+
+	100% {
+		box-shadow: none;
+	}
+}
+
+.sound1 #video-mask {
+	animation: draaien .5s;
+	animation-duration: 2s;
+}
+
+@keyframes draaien {
+	0% { 
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+body.sound2 {
+	animation: sirene 5s;
+	animation-duration: 5s;
+}
+
+@keyframes sirene {
+	0% {
+		box-shadow: none;
+	}
+
+	50% {
+		box-shadow: inset 0px 0px 100px 35px blue;
+	}
+
+	100% {
+		box-shadow: none;
+	}
+}
+
+.sound3 #video-mask {
+	animation: kleiner .3s;
+	animation-duration: 1.3s;
+}
+
+@keyframes kleiner {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(0.95);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.sound4 #video-mask {
+	animation: draaien2 .5s;
+	animation-duration: 2s;
+}
+
+@keyframes draaien2 {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	20% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(-360deg);
+	}
+}
+
 
 .sound9 #video-mask {
 	animation: trilling1 0.1s;
@@ -476,15 +573,24 @@ iframe {
 
 @keyframes trilling8 {
 	0% {
-		transform: scale(1);
+		transform: scale(1) rotate(0deg);
+		
+	}
+
+	25% {
+		transform: rotate(-1deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
 	}
 
 	75% {
-		transform: scale(1.05);
+		transform: scale(1.05) rotate(1deg);
 	}
 
 	100% {
-		transform: scale(1);
+		transform: scale(1) rotate(1deg);
 	}
 }
 
@@ -496,15 +602,23 @@ iframe {
 
 @keyframes trilling9 {
 	0% {
-		transform: scale(1);
+		transform: scale(1) rotate(0deg);
+	}
+
+	25% {
+		transform: rotate(-3deg);
+	}
+
+	50% {
+		transform: rotate(0deg);
 	}
 
 	75% {
-		transform: scale(1.05);
+		transform: scale(1.05) rotate(3deg);
 	}
 
 	100% {
-		transform: scale(1);
+		transform: scale(1) rotate(0deg);
 	}
 }
 
@@ -516,15 +630,21 @@ iframe {
 
 @keyframes trilling10 {
 	0% {
-		transform: scale(1);
+		transform: scale(1) rotate(0deg);
 	}
 
+	25% {
+		transform: rotate(-5deg);
+	}
+
+	50% { transform: rotate(0deg);}
+
 	75% {
-		transform: scale(1.05);
+		transform: scale(1.05) rotate(5deg);
 	}
 
 	100% {
-		transform: scale(1);
+		transform: scale(1) rotate(0deg);
 	}
 }
 
@@ -532,21 +652,111 @@ iframe {
 	animation: none; 
 }
 
-.sound0 #video-mask {
-	animation: schaduw 5s;
-	animation-duration: 10s;
+.sound21 #video-mask {
+	animation: zweven 4s;
+	animation-duration: 16s;
+	animation-timing-function: linear;
 }
 
-@keyframes schaduw {
+@keyframes zweven {
+	0% {
+		transform: translate(0, 0);
+	}
+
+	10% {
+		transform: translate(40px, 50px);
+	}
+
+	20% {
+		transform: translate(70px, 20px);
+	}
+
+	30% {
+		transform: translate(60px, -10px);
+	}
+
+	40% {
+		transform: translate(40px, -50px);
+	}
+
+	50% { 
+		transform: translate(-50px, -10px);
+	}
+
+	60% { 
+		transform: translate(-90px, -30px);
+	}
+
+	70% { 
+		transform: translate(-100px, -80px);
+	}
+
+	80% { 
+		transform: translate(80px, -50px);
+	}
+
+	90% { 
+		transform: translate(-40px, 30px);
+	}
+
+	100% {
+		transform: translate(0, 0);
+	}
+}
+
+body.sound22 {
+	animation: viool 40s;
+}
+
+@keyframes viool {
 	0% {
 		box-shadow: none;
 	}
 
-	50% {
-		box-shadow: 0 0 15px 15px red;
+	60% {
+		box-shadow: inset 0px 0px 140px 75px rgb(42, 42, 42);
 	}
 
 	100% {
 		box-shadow: none;
+	}
+}
+
+.sound23 #video-mask {
+	animation: zweven2;
+	animation-duration: 6s;
+}
+
+@keyframes zweven2 {
+	0% {
+		transform: scale(1);
+		
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+.sound24 #video-mask {
+	animation: piep 1s;
+	animation-iteration-count: 4;
+}
+
+@keyframes piep {
+	0% {
+		transform: scale(1);
+	}
+
+	50% { 
+		transform: scale(1.02);
+	}
+
+	100% {
+		transform: scale(1);
 	}
 }
