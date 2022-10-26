@@ -20,11 +20,11 @@ De feedback die ik gekregen heb tijdens het voortgangsgesprek was:
 # week 2
 Inmiddels heb ik onder de knie hoe je animaties maakt, en 'transform' is mijn grootste vriend geworden, dus andere animaties toevoegen ging eigenlijk best makkelijk. Ik heb in het begin een aantal animaties toegevoegd, en ik ben begonnen aan het tweede deel. Ook heb ik een aantal aanpassingen gedaan gebaseerd op de feedback die ik heb gekregen. Ik heb de 'fuck off skin-job' een stuk subtieler gemaakt, en ik heb (geprobeerd) de animatie irritanter te maken. De grote tekst heb ik nu opbouwend groot gemaakt, dus het begint klein en wordt steeds iets groter, om wel het effect te houden. Ook heb ik de andere tekst iets groter gemaakt. 
 
-<img src="/images/fuckoffskinjob.jpg">
+<img src="/images/fuckoffskinjob.jpg" style="width: 100px">
 
-<img src="/images/cells.jpg">
+<img src="/images/cells.jpg" style="width: 100px">
 
-<img src="/images/kleinfontsize.jpg">
+<img src="/images/kleinfontsize.jpg" style="width: 100px">
 
 ## voortgangsgesprek
 De feedback die ik heb gekregen tijdens dit voortangsgesprek was:
